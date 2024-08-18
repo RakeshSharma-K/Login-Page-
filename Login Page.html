@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HTML Forms 
+        </title>
+        <meta name="Forms " description="Fill The Form "/>
+        <meta charset="UTF-8"/>
+        <style>
+            form {
+                background-color: #ffffff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            }
+
+/* Center the form on the page */
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: #f4f4f4;
+            }
+
+/* Style for form headings */
+            h2 {
+                color: #333333;
+                text-align: center;
+            }
+            input[type="text"],
+            input[type="email"],
+            input[type="tel"],
+            input[type="Passcode"] {
+                width: calc(100% - 22px);
+                padding: 10px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                border: 1px solid #ddd;
+            }
+
+/* Submit button */
+            input[type="submit"],
+            button {
+                width: 45%;
+                padding: 10px;
+                border-radius: 5px;
+                border: none;
+                color: white;
+                background-color: #d3100d;
+                cursor: pointer;
+            }
+            input[type="submit"]:hover,
+            button:hover {
+            background-color: #449d44;
+            }
+            input[type="reset"],
+            button {
+                width: 45%;
+                padding: 10px;
+                border-radius: 5px;
+                border: none;
+                color: white;
+                background-color: #e44e0d;
+                cursor: pointer;
+            }
+            input[type="reset"]:hover,
+            button:hover {
+                background-color: #449d44;
+            }
+/* Reset button (optional) */
+            .reset-button {
+                background-color: #d9534f;
+            }
+
+/* Hover effect for reset button (optional) */
+            .reset-button:hover {
+                background-color: #c9302c;
+            }
+            .forget {
+                text-align: center;
+            }
+        </style>
+       
+
+    </head>
+    <body>
+        <form action="/login" target="_blank" method="post" >
+            <fieldset>
+                <legend>LOGIN</legend><br><br>
+                
+                
+                <label for="email">Enter E-mail:</label>
+                <input type="email" name="email" placeholder="e-mail"  required><br><br>
+                <label for="passcode">PassCode</label>
+                <input type="password" name="Passcode" placeholder="passcode" required><br><br>
+                <div class="forget"><a href="#Title">Forget Passcode?</a></div>
+                <br><br>&nbsp;
+                
+                <input type="submit" value="Login"> &nbsp;
+                <input type="reset" value="Reset">&nbsp;&nbsp;
+                
+            </fieldset>
+        </form>
+    </body>
+</html>
